@@ -9,7 +9,9 @@ module zing {
 
   function ChartController($scope: any): void {
     var vm = this;
-    $scope.myJson = {
+    vm.addPlot = addPlot;
+
+    $scope.myJson2 = {
       layout: 'x7',
       graphset: [{
         backgroundColor: '#000',
@@ -229,5 +231,22 @@ module zing {
         }]
       }]
     };
+
+    function generatePlots() {
+      var arr: Array < any > = [];
+      for (var i = 0; i < 10; i++) {
+        arr.push(Math.floor((Math.random() * 100)));
+      }
+      return arr;
+    }
+
+    function addPlot() {
+      var plot = generatePlots();
+      var test = {
+        text: 'SPM1',
+        values: plot
+      };
+      $scope.myJson2.graphset[2].series.push(test);
+    }
   }
 }

@@ -5,13 +5,13 @@ module zing {
     .module('zing')
     .controller('ChartController', ChartController);
 
-  ChartController.$inject = ['$scope'];
+  ChartController.$inject = ['$scope', 'config'];
 
-  function ChartController($scope: any): void {
-    var vm = this;
+  function ChartController($scope: any, config: any): void {
+    let vm = this;
     vm.addPlot = addPlot;
 
-    $scope.myJson2 = {
+    $scope.myJson = {
       layout: 'x7',
       graphset: [{
         backgroundColor: '#000',
@@ -233,20 +233,28 @@ module zing {
     };
 
     function generatePlots() {
-      var arr: Array < any > = [];
-      for (var i = 0; i < 10; i++) {
+      let arr: Array < any > = [];
+      for (let i = 0; i < 10; i++) {
         arr.push(Math.floor((Math.random() * 100)));
       }
       return arr;
     }
 
+    function generatePlotName() {
+      let plotNames = config.plotNames;
+      return plotNames[Math.floor(Math.random() * plotNames.length)];
+    }
+
     function addPlot() {
-      var plot = generatePlots();
-      var test = {
-        text: 'SPM1',
-        values: plot
-      };
-      $scope.myJson2.graphset[2].series.push(test);
+      for (let i = 2; i < 7; i++) {
+      let plotValues = generatePlots();
+      let plotName = generatePlotName();
+        let plot = {
+          text: plotName,
+          values: plotValues
+        };
+        $scope.myJson.graphset[i].series.push(plot);
+      }
     }
   }
 }

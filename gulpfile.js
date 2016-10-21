@@ -31,6 +31,7 @@ gulp.task('ts', function() {
     var sourceTsFiles = [
         'typings/index.d.ts',
         'src/client/app/app.ts',
+        'src/client/app/common/config.ts',
         'src/client/app/chart/chart.component.ts',
         'src/client/app/chart/chart.controller.ts'
     ];

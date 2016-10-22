@@ -1,9 +1,8 @@
 {
-  "name": "zing",
+  "name": "zing-chart",
   "version": "1.0.0",
-  "authors": [
-    "Steven Gregory"
-  ],
+  "author": "Steven Gregory",
+  "description": "ZingChart demo in AngularJS and TypeScript",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -17,6 +16,5 @@
     "bootstrap": "^3.3.7",
     "zingchart": "^2.5.0",
     "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0"
-  },
-  "description": "ZingChart demo"
+  }
 }

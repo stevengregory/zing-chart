@@ -1,7 +1,7 @@
 ZingChart Demo
 ====================
 
-ZingChart demo in AngularJS and TypeScript.
+[ZingChart](https://www.zingchart.com/) demo in AngularJS and TypeScript.
 
 ## Running Local
 
@@ -13,6 +13,4 @@ ZingChart demo in AngularJS and TypeScript.
 
 1. Run `bower install`
 
-1. Kick off the default task `gulp`
-
-1. Navigate to [http://localhost:8888](http://localhost:8888)
+1. Run `npm start` to start the server and launch the app

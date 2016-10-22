@@ -10,3 +10,6 @@ src/client/css/main.css
 
 # Editor
 .vscode
+
+# Misc
+src/client/app/npm-debug.log

@@ -10,6 +10,7 @@ module zing {
   function ChartController($scope: any, config: any): void {
     let vm = this;
     vm.addPlot = addPlot;
+    vm.resetPlots = resetPlots;
 
     $scope.myJson = {
       layout: 'x7',
@@ -20,11 +21,18 @@ module zing {
           visible: false
         },
         scaleX: {
+          lineColor: '#7aabb7',
           mirrored: true,
           minValue: 0,
           maxValue: 90,
           step: 10,
-          values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+          values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
+          tick: {
+            lineColor: '#7aabb7'
+          },
+          item: {
+            fontColor: '#7aabb7'
+          }
         },
         scaleY: {
           visible: false
@@ -84,10 +92,7 @@ module zing {
         },
         series: [{
           text: 'TQ',
-          values: [59, 37, 82, 77, 59, 38, 97, 93, 31, 99]
-        }, {
-          text: 'WOB',
-          values: [81, 100, 96, 4, 39, 28, 78, 9, 7, 73]
+          values: [7, 37, 82, 7, 59, 38, 97, 93, 31, 88]
         }]
       }, {
         type: 'vline',
@@ -119,10 +124,7 @@ module zing {
         },
         series: [{
           text: 'BD',
-          values: [59, 37, 82, 77, 59, 38, 97, 93, 31, 99]
-        }, {
-          text: 'BLOCK',
-          values: [81, 100, 96, 4, 39, 28, 78, 9, 7, 73]
+          values: [2, 37, 82, 53, 8, 38, 97, 48, 31, 99]
         }]
       }, {
         type: 'vline',
@@ -154,10 +156,7 @@ module zing {
         },
         series: [{
           text: 'MD',
-          values: [59, 37, 82, 77, 59, 38, 97, 93, 31, 26]
-        }, {
-          text: 'MSE',
-          values: [81, 100, 96, 4, 39, 28, 78, 9, 7, 73]
+          values: [59, 3, 82, 77, 13, 38, 97, 93, 31, 26]
         }]
       }, {
         type: 'vline',
@@ -189,10 +188,7 @@ module zing {
         },
         series: [{
           text: 'ROPA',
-          values: [59, 37, 82, 77, 59, 38, 97, 93, 31, 26]
-        }, {
-          text: 'SURF RPM',
-          values: [81, 100, 96, 4, 39, 28, 78, 9, 7, 73]
+          values: [59, 37, 82, 21, 59, 56, 97, 93, 31, 11]
         }]
       }, {
         type: 'vline',
@@ -224,10 +220,7 @@ module zing {
         },
         series: [{
           text: 'SPM1',
-          values: [59, 37, 82, 77, 59, 38, 97, 93, 31, 26]
-        }, {
-          text: 'SPM2',
-          values: [81, 100, 96, 4, 39, 28, 78, 9, 7, 73]
+          values: [59, 37, 82, 1, 59, 14, 97, 93, 31, 99]
         }]
       }]
     };
@@ -247,13 +240,19 @@ module zing {
 
     function addPlot() {
       for (let i = 2; i < 7; i++) {
-      let plotValues = generatePlots();
-      let plotName = generatePlotName();
+        let plotValues = generatePlots();
+        let plotName = generatePlotName();
         let plot = {
           text: plotName,
           values: plotValues
         };
         $scope.myJson.graphset[i].series.push(plot);
+      }
+    }
+
+    function resetPlots() {
+      for (let i = 2; i < 7; i++) {
+        $scope.myJson.graphset[i].series = [];
       }
     }
   }

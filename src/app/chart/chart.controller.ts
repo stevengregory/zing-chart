@@ -7,7 +7,7 @@ module zing {
 
   ChartController.$inject = ['$scope', 'config'];
 
-  function ChartController($scope: any, config: any): void {
+  function ChartController($scope: any, config: { plotNames: Array<string> }): void {
     let vm = this;
     vm.addPlot = addPlot;
     vm.resetPlots = resetPlots;
@@ -246,20 +246,20 @@ module zing {
       }]
     };
 
-    function generatePlots() {
-      let arr: Array < any > = [];
+    function generatePlots(): Array<number> {
+      let arr: Array<number> = [];
       for (let i = 0; i < 10; i++) {
         arr.push(Math.floor((Math.random() * 100)));
       }
       return arr;
     }
 
-    function generatePlotName() {
+    function generatePlotName(): string {
       let plotNames = config.plotNames;
       return plotNames[Math.floor(Math.random() * plotNames.length)];
     }
 
-    function addPlot() {
+    function addPlot(): void {
       for (let i = 2; i < 7; i++) {
         let plotValues = generatePlots();
         let plotName = generatePlotName();
@@ -271,7 +271,7 @@ module zing {
       }
     }
 
-    function resetPlots() {
+    function resetPlots(): void {
       for (let i = 2; i < 7; i++) {
         $scope.myJson.graphset[i].series = [];
       }

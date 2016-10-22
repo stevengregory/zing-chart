@@ -1,2 +1,0 @@
-[1021/155946:ERROR:exception_handler_server.cc(504)] failed to open 7104
-[1021/155946:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: No process is on the other end of the pipe. (0xE9)

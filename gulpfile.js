@@ -73,7 +73,7 @@ gulp.task('serve', function() {
 gulp.task('watch', function() {
     gulp.watch('src/client/index.html', ['htmlhint']);
     gulp.watch('src/client/app/**/*.ts', ['bundle']);
-    gulp.watch('src/client/css/less/main.less', ['less']);
+    gulp.watch('src/client/css/main.less', ['less']);
 });
 
 gulp.task('build', ['less', 'bundle']);

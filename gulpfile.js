@@ -2,11 +2,11 @@
 
 var gulp = require('gulp'),
   browserify = require('browserify'),
-  gls = require('gulp-live-server'),
   source = require('vinyl-source-stream'),
   ts = require('gulp-typescript'),
   tslint = require('gulp-tslint'),
   tsProject = ts.createProject('tsconfig.json'),
+  lite = require('lite-server'),
   plug = require('gulp-load-plugins')();
 
 gulp.task('htmlhint', function() {
@@ -55,21 +55,6 @@ gulp.task('bundle', ['ts'], function() {
     .pipe(gulp.dest('src/app'));
 });
 
-gulp.task('serve', function() {
-  var server = gls.static('src', 8888),
-    reloadFiles = [
-      'src/index.html',
-      'src/app/layout/shell.html',
-      'src/app/chart/chart.component.html',
-      'src/css/main.css',
-      'src/app/bundle.js'
-    ];
-  server.start();
-  gulp.watch([reloadFiles], function(file) {
-    server.notify.apply(server, [file]);
-  });
-});
-
 gulp.task('watch', function() {
   gulp.watch('src/index.html', ['htmlhint']);
   gulp.watch('src/app/**/*.ts', ['bundle']);
@@ -78,4 +63,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['less', 'bundle']);
 
-gulp.task('default', ['build', 'watch', 'serve']);
+gulp.task('default', ['build', 'watch']);

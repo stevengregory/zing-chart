@@ -18,5 +18,5 @@
     "zingchart": "^2.5.0",
     "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0"
   },
-  "description": "Zing chart demo"
+  "description": "ZingChart demo"
 }

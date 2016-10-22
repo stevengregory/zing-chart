@@ -1,5 +1,7 @@
-Zing Chart Demo
+ZingChart Demo
 ====================
+
+ZingChart demo with AngularJS directives.
 
 ## Running Local
 

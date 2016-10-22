@@ -1,15 +1,15 @@
 # Bower & Node
-src/client/bower_components
+src/bower_components
 node_modules
 
 # TypeScript, Browserify and Less
 typings
-src/client/app/output.js
-src/client/app/bundle.js
-src/client/css/main.css
+src/app/output.js
+src/app/bundle.js
+src/css/main.css
 
 # Editor
 .vscode
 
 # Misc
-src/client/npm-debug.log
+src/npm-debug.log

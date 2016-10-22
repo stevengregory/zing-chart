@@ -10,59 +10,59 @@ var gulp = require('gulp'),
   plug = require('gulp-load-plugins')();
 
 gulp.task('htmlhint', function() {
-  return gulp.src('src/client/index.html')
+  return gulp.src('src/index.html')
     .pipe(plug.htmlhint())
     .pipe(plug.htmlhint.reporter());
 });
 
 gulp.task('tslint', function() {
-  return gulp.src(['src/client/app/**/*.ts'])
+  return gulp.src(['src/app/**/*.ts'])
     .pipe(tslint())
     .pipe(tslint.report('verbose'));
 });
 
 gulp.task('less', function() {
-  return gulp.src('src/client/css/main.less')
+  return gulp.src('src/css/main.less')
     .pipe(plug.less())
-    .pipe(gulp.dest('src/client/css'));
+    .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('ts', function() {
   var sourceTsFiles = [
     'typings/index.d.ts',
-    'src/client/app/app.ts',
-    'src/client/app/common/config.ts',
-    'src/client/app/chart/chart.component.ts',
-    'src/client/app/chart/chart.controller.ts'
+    'src/app/app.ts',
+    'src/app/common/config.ts',
+    'src/app/chart/chart.component.ts',
+    'src/app/chart/chart.controller.ts'
   ];
   var tsResult = gulp.src(sourceTsFiles)
     .pipe(ts(tsProject));
   return tsResult.js
-    .pipe(gulp.dest('src/client/app'));
+    .pipe(gulp.dest('src/app'));
 });
 
 gulp.task('bundle', ['ts'], function() {
   browserify({
       entries: [
-        'src/client/bower_components/angular/angular.min.js',
-        'src/client/bower_components/zingchart/client/zingchart.min.js',
-        'src/client/bower_components/ZingChart-AngularJS/src/zingchart-angularjs.js',
-        'src/client/app/output.js'
+        'src/bower_components/angular/angular.min.js',
+        'src/bower_components/zingchart/client/zingchart.min.js',
+        'src/bower_components/ZingChart-AngularJS/src/zingchart-angularjs.js',
+        'src/app/output.js'
       ]
     })
     .bundle()
     .pipe(source('bundle.js'))
-    .pipe(gulp.dest('src/client/app'));
+    .pipe(gulp.dest('src/app'));
 });
 
 gulp.task('serve', function() {
-  var server = gls.static('src/client', 8888),
+  var server = gls.static('src', 8888),
     reloadFiles = [
-      'src/client/index.html',
-      'src/client/app/layout/shell.html',
-      'src/client/app/chart/chart.component.html',
-      'src/client/css/main.css',
-      'src/client/app/bundle.js'
+      'src/index.html',
+      'src/app/layout/shell.html',
+      'src/app/chart/chart.component.html',
+      'src/css/main.css',
+      'src/app/bundle.js'
     ];
   server.start();
   gulp.watch([reloadFiles], function(file) {
@@ -71,9 +71,9 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/client/index.html', ['htmlhint']);
-  gulp.watch('src/client/app/**/*.ts', ['bundle']);
-  gulp.watch('src/client/css/main.less', ['less']);
+  gulp.watch('src/index.html', ['htmlhint']);
+  gulp.watch('src/app/**/*.ts', ['bundle']);
+  gulp.watch('src/css/main.less', ['less']);
 });
 
 gulp.task('build', ['less', 'bundle']);

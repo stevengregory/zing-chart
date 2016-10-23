@@ -90,11 +90,41 @@ module zing {
             maxValue: 90,
             step: 10,
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
-            visible: false,
-            zooming: true
+            visible: true,
+            zooming: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           scaleY: {
-            visible: false
+            visible: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           zoom: {
             shared: true
@@ -125,11 +155,41 @@ module zing {
             maxValue: 90,
             step: 10,
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
-            visible: false,
-            zooming: true
+            visible: true,
+            zooming: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           scaleY: {
-            visible: false
+            visible: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           zoom: {
             shared: true
@@ -160,11 +220,41 @@ module zing {
             maxValue: 90,
             step: 10,
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
-            visible: false,
-            zooming: true
+            visible: true,
+            zooming: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           scaleY: {
-            visible: false
+            visible: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           zoom: {
             shared: true
@@ -195,11 +285,41 @@ module zing {
             maxValue: 90,
             step: 10,
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
-            visible: false,
-            zooming: true
+            visible: true,
+            zooming: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           scaleY: {
-            visible: false
+            visible: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           zoom: {
             shared: true
@@ -230,11 +350,41 @@ module zing {
             maxValue: 90,
             step: 10,
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
-            visible: false,
-            zooming: true
+            visible: true,
+            zooming: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           scaleY: {
-            visible: false
+            visible: true,
+            guide: {
+              visible: true,
+              lineColor: '#7aabb7',
+              lineStyle: 'dotted',
+              lineGapSize: '4px'
+            },
+            lineColor: '#7aabb7',
+            lineStyle: 'dotted',
+            lineGapSize: '4px',
+            tick: {
+              lineColor: '#000'
+            },
+            item: {
+              fontColor: '#000'
+            }
           },
           zoom: {
             shared: true

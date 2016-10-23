@@ -71,7 +71,11 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '10%',
+            marginLeft: '15%',
+            marginRight: '15%',
+            x: '-20%',
+            y: '10%'
           },
           backgroundColor: '#000',
           legend: {
@@ -81,7 +85,8 @@ module zing {
             item: {
               fontColor: '#fff'
             },
-            x: '25%',
+            width: '73%',
+            x: '-20%',
             y: '0%'
           },
           scaleX: {
@@ -136,7 +141,11 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '10%',
+            marginLeft: '15%',
+            marginRight: '15%',
+            x: '-20%',
+            y: '10%'
           },
           backgroundColor: '#000',
           legend: {
@@ -146,7 +155,8 @@ module zing {
             item: {
               fontColor: '#fff'
             },
-            x: '25%',
+            width: '73%',
+            x: '-20%',
             y: '0%'
           },
           scaleX: {
@@ -201,7 +211,11 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '10%',
+            marginLeft: '15%',
+            marginRight: '15%',
+            x: '-20%',
+            y: '10%'
           },
           backgroundColor: '#000',
           legend: {
@@ -211,7 +225,8 @@ module zing {
             item: {
               fontColor: '#fff'
             },
-            x: '25%',
+            width: '73%',
+            x: '-20%',
             y: '0%'
           },
           scaleX: {
@@ -266,7 +281,11 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '10%',
+            marginLeft: '15%',
+            marginRight: '15%',
+            x: '-20%',
+            y: '10%'
           },
           backgroundColor: '#000',
           legend: {
@@ -276,7 +295,8 @@ module zing {
             item: {
               fontColor: '#fff'
             },
-            x: '25%',
+            width: '73%',
+            x: '-20%',
             y: '0%'
           },
           scaleX: {
@@ -331,7 +351,11 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '10%',
+            marginLeft: '15%',
+            marginRight: '15%',
+            x: '-20%',
+            y: '10%'
           },
           backgroundColor: '#000',
           legend: {
@@ -341,7 +365,8 @@ module zing {
             item: {
               fontColor: '#fff'
             },
-            x: '25%',
+            width: '73%',
+            x: '-20%',
             y: '0%'
           },
           scaleX: {

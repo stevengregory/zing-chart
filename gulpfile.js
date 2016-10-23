@@ -22,16 +22,17 @@ gulp.task('tslint', function() {
 });
 
 gulp.task('less', function() {
-  return gulp.src('src/css/main.less')
+  return gulp.src('src/styles/main.less')
     .pipe(plug.less())
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest('src/styles'));
 });
 
 gulp.task('ts', function() {
   var sourceTsFiles = [
     'typings/index.d.ts',
     'src/app/app.ts',
-    'src/app/common/config.ts',
+    'src/app/core/config.ts',
+    'src/app/chart/chart.service.ts',
     'src/app/chart/chart.component.ts',
     'src/app/chart/chart.controller.ts'
   ];
@@ -58,7 +59,7 @@ gulp.task('bundle', ['ts'], function() {
 gulp.task('watch', function() {
   gulp.watch('src/index.html', ['htmlhint']);
   gulp.watch('src/app/**/*.ts', ['bundle']);
-  gulp.watch('src/css/main.less', ['less']);
+  gulp.watch('src/styles/main.less', ['less']);
 });
 
 gulp.task('build', ['less', 'bundle']);

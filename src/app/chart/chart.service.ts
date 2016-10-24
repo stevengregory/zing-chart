@@ -17,7 +17,7 @@ module zing {
         graphset: [{
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '12%'
           },
           backgroundColor: '#000',
           legend: {
@@ -46,7 +46,7 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '10%'
+            marginTop: '12%'
           },
           backgroundColor: '#000',
           legend: {
@@ -73,10 +73,29 @@ module zing {
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',
-            y: '10%'
+            y: '12%'
           },
           backgroundColor: '#000',
           legend: {
+            maxItems: 3,
+            overflow: 'scroll',
+            scroll: {
+              bar: {
+                backgroundColor: '#444',
+                borderLeft: '1px solid #222',
+                borderRight: '1px solid #222',
+                borderTop: '1px solid #222',
+                borderBottom: '1px solid #222',
+              },
+              handle: {
+                backgroundColor: '#333',
+                borderLeft: '2px solid #222',
+                borderRight: '2px solid #222',
+                borderTop: '2px solid #222',
+                borderBottom: '2px solid #222',
+                borderRadius: '15px'
+              }
+            },
             backgroundColor: '#333',
             borderColor: '#222',
             visible: true,
@@ -143,10 +162,29 @@ module zing {
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',
-            y: '10%'
+            y: '12%'
           },
           backgroundColor: '#000',
           legend: {
+            maxItems: 3,
+            overflow: 'scroll',
+            scroll: {
+              bar: {
+                backgroundColor: '#444',
+                borderLeft: '1px solid #222',
+                borderRight: '1px solid #222',
+                borderTop: '1px solid #222',
+                borderBottom: '1px solid #222',
+              },
+              handle: {
+                backgroundColor: '#333',
+                borderLeft: '2px solid #222',
+                borderRight: '2px solid #222',
+                borderTop: '2px solid #222',
+                borderBottom: '2px solid #222',
+                borderRadius: '15px'
+              }
+            },
             backgroundColor: '#333',
             borderColor: '#222',
             visible: true,
@@ -213,10 +251,29 @@ module zing {
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',
-            y: '10%'
+            y: '12%'
           },
           backgroundColor: '#000',
           legend: {
+            maxItems: 3,
+            overflow: 'scroll',
+            scroll: {
+              bar: {
+                backgroundColor: '#444',
+                borderLeft: '1px solid #222',
+                borderRight: '1px solid #222',
+                borderTop: '1px solid #222',
+                borderBottom: '1px solid #222',
+              },
+              handle: {
+                backgroundColor: '#333',
+                borderLeft: '2px solid #222',
+                borderRight: '2px solid #222',
+                borderTop: '2px solid #222',
+                borderBottom: '2px solid #222',
+                borderRadius: '15px'
+              }
+            },
             backgroundColor: '#333',
             borderColor: '#222',
             visible: true,
@@ -283,10 +340,29 @@ module zing {
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',
-            y: '10%'
+            y: '12%'
           },
           backgroundColor: '#000',
           legend: {
+            maxItems: 3,
+            overflow: 'scroll',
+            scroll: {
+              bar: {
+                backgroundColor: '#444',
+                borderLeft: '1px solid #222',
+                borderRight: '1px solid #222',
+                borderTop: '1px solid #222',
+                borderBottom: '1px solid #222',
+              },
+              handle: {
+                backgroundColor: '#333',
+                borderLeft: '2px solid #222',
+                borderRight: '2px solid #222',
+                borderTop: '2px solid #222',
+                borderBottom: '2px solid #222',
+                borderRadius: '15px'
+              }
+            },
             backgroundColor: '#333',
             borderColor: '#222',
             visible: true,
@@ -353,10 +429,29 @@ module zing {
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',
-            y: '10%'
+            y: '12%'
           },
           backgroundColor: '#000',
           legend: {
+            maxItems: 3,
+            overflow: 'scroll',
+            scroll: {
+              bar: {
+                backgroundColor: '#444',
+                borderLeft: '1px solid #222',
+                borderRight: '1px solid #222',
+                borderTop: '1px solid #222',
+                borderBottom: '1px solid #222',
+              },
+              handle: {
+                backgroundColor: '#333',
+                borderLeft: '2px solid #222',
+                borderRight: '2px solid #222',
+                borderTop: '2px solid #222',
+                borderBottom: '2px solid #222',
+                borderRadius: '15px'
+              }
+            },
             backgroundColor: '#333',
             borderColor: '#222',
             visible: true,

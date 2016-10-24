@@ -42,8 +42,7 @@ module zing {
           },
           zoom: {
             shared: true
-          },
-          series: [{}]
+          }
         }, {
           type: 'vline',
           plotarea: {
@@ -66,8 +65,7 @@ module zing {
           },
           zoom: {
             shared: true
-          },
-          series: [{}]
+          }
         }, {
           type: 'vline',
           plotarea: {

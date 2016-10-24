@@ -11,7 +11,7 @@ module zing {
     };
     return service;
 
-    function getCharts() {
+    function getCharts(): Object {
       return {
         layout: 'x7',
         graphset: [{

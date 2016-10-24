@@ -1,3 +1,7 @@
 <zingchart id="myChart" zc-json="myJson" zc-height="700" zc-width="1200"></zingchart>
-<button class="btn btn-primary" ng-click="vm.addPlot()">Add Plots</button>
-<button class="btn btn-primary" ng-click="vm.resetPlots()">Reset Plots</button>
+<button type="button btn-primary" class="btn btn-primary" ng-click="vm.addPlot()">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Plots
+</button>
+<button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Plots
+</button>

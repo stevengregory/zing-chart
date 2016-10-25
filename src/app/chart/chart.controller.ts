@@ -5,13 +5,13 @@ module zing {
     .module('zing')
     .controller('ChartController', ChartController);
 
-  ChartController.$inject = ['$scope', 'config', 'chartService'];
+  ChartController.$inject = ['config', 'chartService'];
 
-  function ChartController($scope: any, config: { plotNames: Array<string> }, chartService: { getCharts: any }): void {
+  function ChartController(config: { plotNames: Array<string> }, chartService: { getCharts: any }): void {
     let vm = this;
     vm.addPlot = addPlot;
     vm.resetPlots = resetPlots;
-    $scope.myJson = chartService.getCharts();
+    vm.myJson = chartService.getCharts();
 
     function generatePlots(): Array<number> {
       let arr: Array<number> = [];
@@ -34,13 +34,13 @@ module zing {
           text: plotName,
           values: plotValues
         };
-        $scope.myJson.graphset[i].series.push(plot);
+        vm.myJson.graphset[i].series.push(plot);
       }
     }
 
     function resetPlots(): void {
       for (let i = 2; i < 7; i++) {
-        $scope.myJson.graphset[i].series = [];
+        vm.myJson.graphset[i].series = [];
       }
     }
   }

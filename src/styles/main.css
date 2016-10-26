@@ -22,7 +22,7 @@ button {
   width: 121px;
 }
 div[dnd-list] .dndPlaceholder {
-  color: #111;
+  color: #000;
   border: 1px dashed #7aabb7;
   height: 103%;
   left: -1px;

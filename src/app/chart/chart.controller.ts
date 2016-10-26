@@ -15,12 +15,12 @@ module zing {
     vm.dropCallback = dropCallback;
     vm.plots = ['Drag Plot'];
 
-    function dropCallback() {
+    function dropCallback(chartId: number) {
         let plot = {
           text: generatePlotName(),
           values: generatePlots()
         };
-        vm.myJson.graphset[2].series.push(plot);
+        vm.myJson.graphset[chartId].series.push(plot);
     }
 
     function generatePlots(): Array<number> {

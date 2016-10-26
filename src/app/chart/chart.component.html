@@ -1,11 +1,40 @@
-<zingchart id="myChart" zc-json="vm.myJson" zc-height="700" zc-width="1200"></zingchart>
-<button type="button btn-primary" class="btn btn-primary" ng-click="vm.addPlot()">
-  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Plots
-</button>
-<button type="button btn-primary" class="btn btn-primary" ng-click="vm.resetPlots()" ng-repeat="plot in vm.plots" dnd-draggable="plot">
-  <span class="glyphicon glyphicon-move" aria-hidden="true"></span> {{ plot }}
-</button>
-<button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()">
-  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Plots
-</button>
-<div class="drop-zone" dnd-list dnd-drop="vm.dropCallback(2)">Drop Zone</div>
+<div class="row">
+  <div class="col-md-2 logs">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Log Data</h3>
+      </div>
+      <div class="panel-body">
+        <div class="plots">
+          <button type="button btn-primary" class="btn btn-primary" ng-repeat="plot in vm.plots track by $index" dnd-draggable="plot"
+            dnd-dragstart="vm.dragCallback(plot)">
+           {{ plot }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-10 tracks">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Tracks</h3>
+      </div>
+      <div class="panel-body">
+        <div class="chart">
+          <zingchart id="myChart" zc-json="vm.myJson" zc-height="700" zc-width="1200"></zingchart>
+          <button type="button btn-primary" class="btn btn-primary" ng-click="vm.addPlot()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Plots
+          </button>
+          <button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Plots
+          </button>
+          <div class="drop-zone zone-2" dnd-list dnd-drop="vm.dropCallback(2)">Drop Zone 1</div>
+          <div class="drop-zone zone-3" dnd-list dnd-drop="vm.dropCallback(3)">Drop Zone 2</div>
+          <div class="drop-zone zone-4" dnd-list dnd-drop="vm.dropCallback(4)">Drop Zone 3</div>
+          <div class="drop-zone zone-5" dnd-list dnd-drop="vm.dropCallback(5)">Drop Zone 4</div>
+          <div class="drop-zone zone-6" dnd-list dnd-drop="vm.dropCallback(6)">Drop Zone 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

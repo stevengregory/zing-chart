@@ -13,7 +13,8 @@ module zing {
     vm.resetPlots = resetPlots;
     vm.myJson = chartService.getCharts();
     vm.dropCallback = dropCallback;
-    vm.plots = ['Drag Plot'];
+    vm.dragCallback = dragCallback;
+    vm.plots = config.plotNames;
 
     function randomPlot(): Object {
       let plot = {
@@ -23,8 +24,16 @@ module zing {
       return plot;
     }
 
+    function dragCallback(plotName: string): string {
+      vm.plotName = plotName;
+      return vm.plotName;
+    }
+
     function dropCallback(chartId: number): void {
-      let plot = randomPlot();
+      let plot = {
+        text: vm.plotName,
+        values: generatePlots()
+      };
       vm.myJson.graphset[chartId].series.push(plot);
     }
 
@@ -44,6 +53,7 @@ module zing {
     function addPlot(): void {
       for (let i = 2; i < 7; i++) {
         let plot = randomPlot();
+        console.log(vm.myJson.graphset[i]);
         vm.myJson.graphset[i].series.push(plot);
       }
     }

@@ -78,7 +78,6 @@ module zing {
           },
           plotarea: {
             marginTop: '10%',
-            marginBottom: '22%',
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',

@@ -23,7 +23,7 @@ module zing {
       return plot;
     }
 
-    function dropCallback(chartId: number) {
+    function dropCallback(chartId: number): void {
         let plot = randomPlot();
         vm.myJson.graphset[chartId].series.push(plot);
     }

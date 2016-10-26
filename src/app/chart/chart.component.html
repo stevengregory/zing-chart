@@ -2,7 +2,7 @@
 <button type="button btn-primary" class="btn btn-primary" ng-click="vm.addPlot()">
   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Plots
 </button>
-<button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()" ng-repeat="plot in vm.plots" dnd-draggable="plot">
+<button type="button btn-primary" class="btn btn-primary" ng-click="vm.resetPlots()" ng-repeat="plot in vm.plots" dnd-draggable="plot">
   <span class="glyphicon glyphicon-move" aria-hidden="true"></span> {{ plot }}
 </button>
 <button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()">

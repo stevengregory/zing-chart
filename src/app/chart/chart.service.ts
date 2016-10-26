@@ -12,6 +12,9 @@ module zing {
     return service;
 
     function getCharts(): Object {
+      function test() {
+        return 'test';
+      }
       return {
         layout: 'x7',
         graphset: [{
@@ -68,8 +71,14 @@ module zing {
           }
         }, {
           type: 'vline',
+          id: 'ninja',
+          'dnd-list': '',
+          'dnd-drop': function dropCallback() {
+            console.log('drop');
+          },
           plotarea: {
             marginTop: '10%',
+            marginBottom: '22%',
             marginLeft: '15%',
             marginRight: '15%',
             x: '-20%',

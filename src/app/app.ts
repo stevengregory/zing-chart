@@ -1,5 +1,5 @@
 module zing {
   'use strict';
 
-  angular.module('zing', ['zingchart-angularjs']);
+  angular.module('zing', ['zingchart-angularjs', 'dndLists']);
 }

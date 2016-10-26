@@ -12,6 +12,16 @@ module zing {
     vm.addPlot = addPlot;
     vm.resetPlots = resetPlots;
     vm.myJson = chartService.getCharts();
+    vm.dropCallback = dropCallback;
+    vm.plots = ['Drag Plot'];
+
+    function dropCallback() {
+        let plot = {
+          text: generatePlotName(),
+          values: generatePlots()
+        };
+        vm.myJson.graphset[2].series.push(plot);
+    }
 
     function generatePlots(): Array<number> {
       let arr: Array<number> = [];
@@ -28,11 +38,9 @@ module zing {
 
     function addPlot(): void {
       for (let i = 2; i < 7; i++) {
-        let plotValues = generatePlots();
-        let plotName = generatePlotName();
         let plot = {
-          text: plotName,
-          values: plotValues
+          text: generatePlotName(),
+          values: generatePlots()
         };
         vm.myJson.graphset[i].series.push(plot);
       }

@@ -8,3 +8,41 @@ body {
 button {
   margin-left: 15px;
 }
+
+.drop-zone {
+  background-color: #000;
+  border: 1px dashed #555;
+  color: #7aabb7;
+  position: absolute;
+  height: 75px;
+  padding-top: 25px;
+  width: 121px;
+  top: 625px;
+  left: 369px;
+  text-align: center;
+}
+
+div[dnd-list] .dndPlaceholder {
+  border: 1px dashed #7aabb7;
+  top: -1px;
+  left: -1px;
+  position: absolute;
+  color: #111;
+  height: 103%;
+  width: 102%;
+}
+
+ul[dnd-list] li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+}
+
+.dndDragging {
+  background-color: red;
+  color: pink;
+}

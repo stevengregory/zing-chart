@@ -46,6 +46,7 @@ gulp.task('bundle', ['ts'], function() {
   browserify({
       entries: [
         'src/bower_components/angular/angular.min.js',
+        'src/bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js',
         'src/bower_components/zingchart/client/zingchart.min.js',
         'src/bower_components/ZingChart-AngularJS/src/zingchart-angularjs.js',
         'src/app/output.js'

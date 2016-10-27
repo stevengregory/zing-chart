@@ -79,3 +79,12 @@ ul[dnd-list] li {
   margin-bottom: -1px;
   padding: 10px 15px;
 }
+.divider-bar {
+  background-color: #337ab7;
+  height: 7px;
+  left: 15px;
+  position: absolute;
+  top: 120px;
+  width: 97.5%;
+  z-index: 100;
+}

@@ -24,7 +24,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            visible: false
+            width: '55px',
+            backgroundColor: '#222',
+            borderTop: 'red',
+            item: {
+              fontColor: '#fff',
+              height: '60px',
+              x: '-12%'
+            },
+            marker: {
+              visible: 'false'
+            },
+            x: '0%',
+            y: '0%'
           },
           scaleX: {
             lineColor: '#7aabb7',
@@ -45,7 +57,10 @@ module zing {
           },
           zoom: {
             shared: true
-          }
+          },
+          series: [{
+            text: 'MD',
+          }]
         }, {
           type: 'vline',
           plotarea: {
@@ -53,7 +68,18 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            visible: false
+            backgroundColor: '#222',
+            borderTop: 'red',
+            item: {
+              fontColor: '#fff',
+              marginRight: '-25px',
+              height: '60px'
+            },
+            marker: {
+              visible: 'false'
+            },
+            x: '-32%',
+            y: '0%'
           },
           scaleX: {
             mirrored: true,
@@ -68,7 +94,10 @@ module zing {
           },
           zoom: {
             shared: true
-          }
+          },
+          series: [{
+            text: 'Date-Time',
+          }]
         }, {
           type: 'vline',
           id: 'ninja',

@@ -85,7 +85,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            maxItems: 3,
+            header: {
+              backgroundColor: '#222',
+              borderLeft: '2px solid #111',
+              borderRight: '2px solid #111',
+              borderTop: '2px solid #111',
+              borderBottom: '2px solid #111',
+              color: '#fff',
+              fontSize: '12px',
+              height: '30px',
+              paddingBottom: '10px',
+              text: 'Track 1'
+            },
+            maxItems: 2,
             overflow: 'scroll',
             scroll: {
               bar: {
@@ -104,11 +116,12 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#333',
-            borderColor: '#222',
+            backgroundColor: '#000',
+            borderColor: '#111',
             visible: true,
             item: {
-              fontColor: '#fff'
+              fontColor: '#fff',
+              height: '15px'
             },
             width: '73%',
             x: '-20%',
@@ -174,7 +187,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            maxItems: 3,
+            header: {
+              backgroundColor: '#222',
+              borderLeft: '2px solid #111',
+              borderRight: '2px solid #111',
+              borderTop: '2px solid #111',
+              borderBottom: '2px solid #111',
+              color: '#fff',
+              fontSize: '12px',
+              height: '30px',
+              paddingBottom: '10px',
+              text: 'Track 2'
+            },
+            maxItems: 2,
             overflow: 'scroll',
             scroll: {
               bar: {
@@ -193,11 +218,12 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#333',
-            borderColor: '#222',
+            backgroundColor: '#000',
+            borderColor: '#111',
             visible: true,
             item: {
-              fontColor: '#fff'
+              fontColor: '#fff',
+              height: '15px'
             },
             width: '73%',
             x: '-20%',
@@ -263,7 +289,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            maxItems: 3,
+            header: {
+              backgroundColor: '#222',
+              borderLeft: '2px solid #111',
+              borderRight: '2px solid #111',
+              borderTop: '2px solid #111',
+              borderBottom: '2px solid #111',
+              color: '#fff',
+              fontSize: '12px',
+              height: '30px',
+              paddingBottom: '10px',
+              text: 'Track 3'
+            },
+            maxItems: 2,
             overflow: 'scroll',
             scroll: {
               bar: {
@@ -282,11 +320,12 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#333',
-            borderColor: '#222',
+            backgroundColor: '#000',
+            borderColor: '#111',
             visible: true,
             item: {
-              fontColor: '#fff'
+              fontColor: '#fff',
+              height: '15px'
             },
             width: '73%',
             x: '-20%',
@@ -352,7 +391,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            maxItems: 3,
+            header: {
+              backgroundColor: '#222',
+              borderLeft: '2px solid #111',
+              borderRight: '2px solid #111',
+              borderTop: '2px solid #111',
+              borderBottom: '2px solid #111',
+              color: '#fff',
+              fontSize: '12px',
+              height: '30px',
+              paddingBottom: '10px',
+              text: 'Track 4'
+            },
+            maxItems: 2,
             overflow: 'scroll',
             scroll: {
               bar: {
@@ -371,11 +422,12 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#333',
-            borderColor: '#222',
+            backgroundColor: '#000',
+            borderColor: '#111',
             visible: true,
             item: {
-              fontColor: '#fff'
+              fontColor: '#fff',
+              height: '15px'
             },
             width: '73%',
             x: '-20%',
@@ -441,7 +493,19 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
-            maxItems: 3,
+            header: {
+              backgroundColor: '#222',
+              borderLeft: '2px solid #111',
+              borderRight: '2px solid #111',
+              borderTop: '2px solid #111',
+              borderBottom: '2px solid #111',
+              color: '#fff',
+              fontSize: '12px',
+              height: '30px',
+              paddingBottom: '10px',
+              text: 'Track 5'
+            },
+            maxItems: 2,
             overflow: 'scroll',
             scroll: {
               bar: {
@@ -460,11 +524,12 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#333',
-            borderColor: '#222',
+            backgroundColor: '#000',
+            borderColor: '#111',
             visible: true,
             item: {
-              fontColor: '#fff'
+              fontColor: '#fff',
+              height: '15px'
             },
             width: '73%',
             x: '-20%',

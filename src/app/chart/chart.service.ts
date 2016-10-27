@@ -21,7 +21,8 @@ module zing {
         graphset: [{
           type: 'vline',
           plotarea: {
-            marginTop: '15%'
+            marginTop: '15%',
+            marginBottom: '5%'
           },
           backgroundColor: '#000',
           legend: {
@@ -65,7 +66,8 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '15%'
+            marginTop: '15%',
+            marginBottom: '5%'
           },
           backgroundColor: '#000',
           legend: {

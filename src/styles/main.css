@@ -16,8 +16,15 @@ body {
   width: 200px;
 }
 .tracks {
-  width: 1250px;
+  width: 1100px;
+  overflow: hidden;
   display: block;
+}
+.tracks .panel-body {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 .plots button {
   font-size: 12px;
@@ -26,10 +33,20 @@ body {
   width: 100px;
 }
 .chart {
-  margin-bottom: 26px;
+  margin-bottom: 0px;
+}
+.chart .btn-primary {
+  display: block;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 0;
+  width: 200px;
 }
 .chart .btn-default {
-  margin-left: 10px;
+  height: 50px;
+  margin-left: 20px;
+  width: 200px;
 }
 .drop-zone {
   background-color: #000;
@@ -39,26 +56,26 @@ body {
   padding-top: 25px;
   position: absolute;
   text-align: center;
-  width: 121px;
+  width: 127px;
 }
 .zone-2 {
-  left: 337px;
+  left: 299px;
   top: 725px;
 }
 .zone-3 {
-  left: 508px;
+  left: 455px;
   top: 725px;
 }
 .zone-4 {
-  left: 680px;
+  left: 612px;
   top: 725px;
 }
 .zone-5 {
-  left: 851px;
+  left: 770px;
   top: 725px;
 }
 .zone-6 {
-  left: 1022px;
+  left: 925px;
   top: 725px;
 }
 div[dnd-list] .dndPlaceholder {
@@ -84,7 +101,16 @@ ul[dnd-list] li {
   height: 7px;
   left: 15px;
   position: absolute;
-  top: 120px;
-  width: 97.5%;
+  top: 125px;
+  width: 97.2%;
+  z-index: 100;
+}
+.right-bar {
+  background-color: #337ab7;
+  height: 90%;
+  left: 1084px;
+  position: absolute;
+  top: 1px;
+  width: 1px;
   z-index: 100;
 }

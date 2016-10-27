@@ -17,10 +17,11 @@ module zing {
       }
       return {
         layout: 'x7',
+        marginRight: '0',
         graphset: [{
           type: 'vline',
           plotarea: {
-            marginTop: '12%'
+            marginTop: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -29,7 +30,7 @@ module zing {
             borderTop: 'red',
             item: {
               fontColor: '#fff',
-              height: '60px',
+              height: '75px',
               x: '-12%'
             },
             marker: {
@@ -64,7 +65,7 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '12%'
+            marginTop: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -73,7 +74,7 @@ module zing {
             item: {
               fontColor: '#fff',
               marginRight: '-25px',
-              height: '60px'
+              height: '75px'
             },
             marker: {
               visible: 'false'
@@ -106,11 +107,12 @@ module zing {
             console.log('drop');
           },
           plotarea: {
+            width: '127px',
             marginTop: '10%',
             marginLeft: '15%',
-            marginRight: '15%',
+            marginRight: '0',
             x: '-20%',
-            y: '12%'
+            y: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -152,7 +154,7 @@ module zing {
               fontColor: '#fff',
               height: '15px'
             },
-            width: '73%',
+            width: '127px',
             x: '-20%',
             y: '0%'
           },
@@ -208,11 +210,12 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
+            width: '127px',
             marginTop: '10%',
             marginLeft: '15%',
-            marginRight: '15%',
+            marginRight: '0',
             x: '-20%',
-            y: '12%'
+            y: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -254,7 +257,7 @@ module zing {
               fontColor: '#fff',
               height: '15px'
             },
-            width: '73%',
+            width: '127px',
             x: '-20%',
             y: '0%'
           },
@@ -310,11 +313,12 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
+            width: '127px',
             marginTop: '10%',
             marginLeft: '15%',
-            marginRight: '15%',
+            marginRight: '0',
             x: '-20%',
-            y: '12%'
+            y: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -356,7 +360,7 @@ module zing {
               fontColor: '#fff',
               height: '15px'
             },
-            width: '73%',
+            width: '127px',
             x: '-20%',
             y: '0%'
           },
@@ -412,11 +416,12 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
+            width: '127px',
             marginTop: '10%',
             marginLeft: '15%',
-            marginRight: '15%',
+            marginRight: '0',
             x: '-20%',
-            y: '12%'
+            y: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -458,7 +463,7 @@ module zing {
               fontColor: '#fff',
               height: '15px'
             },
-            width: '73%',
+            width: '127px',
             x: '-20%',
             y: '0%'
           },
@@ -514,11 +519,12 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
+            width: '127px',
             marginTop: '10%',
             marginLeft: '15%',
-            marginRight: '15%',
+            marginRight: '0',
             x: '-20%',
-            y: '12%'
+            y: '15%'
           },
           backgroundColor: '#000',
           legend: {
@@ -560,7 +566,7 @@ module zing {
               fontColor: '#fff',
               height: '15px'
             },
-            width: '73%',
+            width: '127px',
             x: '-20%',
             y: '0%'
           },

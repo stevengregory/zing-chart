@@ -18,7 +18,7 @@ module zing {
         graphset: [{
           type: 'vline',
           plotarea: {
-            marginTop: '15%',
+            marginTop: '18%',
             marginBottom: '5%'
           },
           backgroundColor: '#000',
@@ -28,7 +28,7 @@ module zing {
             borderTop: 'red',
             item: {
               fontColor: '#fff',
-              height: '75px',
+              height: '100px',
               x: '-12%'
             },
             marker: {
@@ -63,7 +63,7 @@ module zing {
         }, {
           type: 'vline',
           plotarea: {
-            marginTop: '15%',
+            marginTop: '18%',
             marginBottom: '5%'
           },
           backgroundColor: '#000',
@@ -72,8 +72,8 @@ module zing {
             borderTop: 'red',
             item: {
               fontColor: '#fff',
-              marginRight: '-25px',
-              height: '75px'
+              marginRight: '-20px',
+              height: '100px'
             },
             marker: {
               visible: 'false'
@@ -102,16 +102,16 @@ module zing {
           type: 'vline',
           plotarea: {
             width: '127px',
-            marginTop: '10%',
+            marginTop: '13%',
             marginLeft: '15%',
             marginRight: '0',
             x: '-20%',
-            y: '15%'
+            y: '18%'
           },
           backgroundColor: '#000',
           legend: {
             backgroundColor: '#000',
-            borderColor: '#000',
+            borderColor: '#111',
             maxItems: 3,
             overflow: 'scroll',
             visible: true,
@@ -215,16 +215,16 @@ module zing {
           type: 'vline',
           plotarea: {
             width: '127px',
-            marginTop: '10%',
+            marginTop: '13%',
             marginLeft: '15%',
             marginRight: '0',
             x: '-20%',
-            y: '15%'
+            y: '18%'
           },
           backgroundColor: '#000',
           legend: {
             backgroundColor: '#000',
-            borderColor: '#000',
+            borderColor: '#111',
             maxItems: 3,
             overflow: 'scroll',
             visible: true,
@@ -328,16 +328,16 @@ module zing {
           type: 'vline',
           plotarea: {
             width: '127px',
-            marginTop: '10%',
+            marginTop: '13%',
             marginLeft: '15%',
             marginRight: '0',
             x: '-20%',
-            y: '15%'
+            y: '18%'
           },
           backgroundColor: '#000',
           legend: {
             backgroundColor: '#000',
-            borderColor: '#000',
+            borderColor: '#111',
             maxItems: 3,
             overflow: 'scroll',
             visible: true,
@@ -441,16 +441,16 @@ module zing {
           type: 'vline',
           plotarea: {
             width: '127px',
-            marginTop: '10%',
+            marginTop: '13%',
             marginLeft: '15%',
             marginRight: '0',
             x: '-20%',
-            y: '15%'
+            y: '18%'
           },
           backgroundColor: '#000',
           legend: {
             backgroundColor: '#000',
-            borderColor: '#000',
+            borderColor: '#111',
             maxItems: 3,
             overflow: 'scroll',
             visible: true,
@@ -554,16 +554,16 @@ module zing {
           type: 'vline',
           plotarea: {
             width: '127px',
-            marginTop: '10%',
+            marginTop: '13%',
             marginLeft: '15%',
             marginRight: '0',
             x: '-20%',
-            y: '15%'
+            y: '18%'
           },
           backgroundColor: '#000',
           legend: {
             backgroundColor: '#000',
-            borderColor: '#000',
+            borderColor: '#111',
             maxItems: 3,
             overflow: 'scroll',
             visible: true,

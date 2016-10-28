@@ -12,9 +12,6 @@ module zing {
     return service;
 
     function getCharts(): Object {
-      function test() {
-        return 'test';
-      }
       return {
         layout: 'x7',
         marginRight: '0',
@@ -103,11 +100,6 @@ module zing {
           }]
         }, {
           type: 'vline',
-          id: 'ninja',
-          'dnd-list': '',
-          'dnd-drop': function dropCallback() {
-            console.log('drop');
-          },
           plotarea: {
             width: '127px',
             marginTop: '10%',
@@ -118,6 +110,14 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
+            backgroundColor: '#000',
+            borderColor: '#000',
+            maxItems: 3,
+            overflow: 'scroll',
+            visible: true,
+            width: '127px',
+            x: '-20%',
+            y: '6px',
             header: {
               backgroundColor: '#222',
               borderLeft: '2px solid #111',
@@ -128,10 +128,8 @@ module zing {
               fontSize: '12px',
               height: '30px',
               paddingBottom: '10px',
-              text: 'Track 1'
+              text: 'Track 1',
             },
-            maxItems: 2,
-            overflow: 'scroll',
             scroll: {
               bar: {
                 backgroundColor: '#444',
@@ -149,16 +147,20 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#000',
-            borderColor: '#111',
-            visible: true,
             item: {
               fontColor: '#fff',
-              height: '15px'
+              height: '15px',
+              paddingTop: '22px',
+              paddingLeft: '26px',
+              textAlign: 'center',
+              y: '-8px'
             },
-            width: '127px',
-            x: '-20%',
-            y: '0%'
+            marker: {
+              borderWidth: '0px',
+              width: '128px',
+              height: '2px',
+              x: '65px'
+            }
           },
           scaleX: {
             mirrored: true,
@@ -221,6 +223,14 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
+            backgroundColor: '#000',
+            borderColor: '#000',
+            maxItems: 3,
+            overflow: 'scroll',
+            visible: true,
+            width: '127px',
+            x: '-20%',
+            y: '6px',
             header: {
               backgroundColor: '#222',
               borderLeft: '2px solid #111',
@@ -231,10 +241,8 @@ module zing {
               fontSize: '12px',
               height: '30px',
               paddingBottom: '10px',
-              text: 'Track 2'
+              text: 'Track 2',
             },
-            maxItems: 2,
-            overflow: 'scroll',
             scroll: {
               bar: {
                 backgroundColor: '#444',
@@ -252,16 +260,20 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#000',
-            borderColor: '#111',
-            visible: true,
             item: {
               fontColor: '#fff',
-              height: '15px'
+              height: '15px',
+              paddingTop: '22px',
+              paddingLeft: '26px',
+              textAlign: 'center',
+              y: '-8px'
             },
-            width: '127px',
-            x: '-20%',
-            y: '0%'
+            marker: {
+              borderWidth: '0px',
+              width: '128px',
+              height: '2px',
+              x: '65px'
+            }
           },
           scaleX: {
             mirrored: true,
@@ -324,6 +336,14 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
+            backgroundColor: '#000',
+            borderColor: '#000',
+            maxItems: 3,
+            overflow: 'scroll',
+            visible: true,
+            width: '127px',
+            x: '-20%',
+            y: '6px',
             header: {
               backgroundColor: '#222',
               borderLeft: '2px solid #111',
@@ -334,10 +354,8 @@ module zing {
               fontSize: '12px',
               height: '30px',
               paddingBottom: '10px',
-              text: 'Track 3'
+              text: 'Track 3',
             },
-            maxItems: 2,
-            overflow: 'scroll',
             scroll: {
               bar: {
                 backgroundColor: '#444',
@@ -355,16 +373,20 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#000',
-            borderColor: '#111',
-            visible: true,
             item: {
               fontColor: '#fff',
-              height: '15px'
+              height: '15px',
+              paddingTop: '22px',
+              paddingLeft: '26px',
+              textAlign: 'center',
+              y: '-8px'
             },
-            width: '127px',
-            x: '-20%',
-            y: '0%'
+            marker: {
+              borderWidth: '0px',
+              width: '128px',
+              height: '2px',
+              x: '65px'
+            }
           },
           scaleX: {
             mirrored: true,
@@ -427,6 +449,14 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
+            backgroundColor: '#000',
+            borderColor: '#000',
+            maxItems: 3,
+            overflow: 'scroll',
+            visible: true,
+            width: '127px',
+            x: '-20%',
+            y: '6px',
             header: {
               backgroundColor: '#222',
               borderLeft: '2px solid #111',
@@ -437,10 +467,8 @@ module zing {
               fontSize: '12px',
               height: '30px',
               paddingBottom: '10px',
-              text: 'Track 4'
+              text: 'Track 4',
             },
-            maxItems: 2,
-            overflow: 'scroll',
             scroll: {
               bar: {
                 backgroundColor: '#444',
@@ -458,16 +486,20 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#000',
-            borderColor: '#111',
-            visible: true,
             item: {
               fontColor: '#fff',
-              height: '15px'
+              height: '15px',
+              paddingTop: '22px',
+              paddingLeft: '26px',
+              textAlign: 'center',
+              y: '-8px'
             },
-            width: '127px',
-            x: '-20%',
-            y: '0%'
+            marker: {
+              borderWidth: '0px',
+              width: '128px',
+              height: '2px',
+              x: '65px'
+            }
           },
           scaleX: {
             mirrored: true,
@@ -530,6 +562,14 @@ module zing {
           },
           backgroundColor: '#000',
           legend: {
+            backgroundColor: '#000',
+            borderColor: '#000',
+            maxItems: 3,
+            overflow: 'scroll',
+            visible: true,
+            width: '127px',
+            x: '-20%',
+            y: '6px',
             header: {
               backgroundColor: '#222',
               borderLeft: '2px solid #111',
@@ -540,10 +580,8 @@ module zing {
               fontSize: '12px',
               height: '30px',
               paddingBottom: '10px',
-              text: 'Track 5'
+              text: 'Track 5',
             },
-            maxItems: 2,
-            overflow: 'scroll',
             scroll: {
               bar: {
                 backgroundColor: '#444',
@@ -561,16 +599,20 @@ module zing {
                 borderRadius: '15px'
               }
             },
-            backgroundColor: '#000',
-            borderColor: '#111',
-            visible: true,
             item: {
               fontColor: '#fff',
-              height: '15px'
+              height: '15px',
+              paddingTop: '22px',
+              paddingLeft: '26px',
+              textAlign: 'center',
+              y: '-8px'
             },
-            width: '127px',
-            x: '-20%',
-            y: '0%'
+            marker: {
+              borderWidth: '0px',
+              width: '128px',
+              height: '2px',
+              x: '65px'
+            }
           },
           scaleX: {
             mirrored: true,

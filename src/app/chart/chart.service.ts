@@ -151,8 +151,8 @@ module zing {
               fontColor: '#fff',
               height: '15px',
               paddingTop: '22px',
-              paddingLeft: '26px',
-              textAlign: 'center',
+              paddingRight: '52px',
+              margin: '0 auto',
               y: '-8px'
             },
             marker: {
@@ -264,8 +264,8 @@ module zing {
               fontColor: '#fff',
               height: '15px',
               paddingTop: '22px',
-              paddingLeft: '26px',
-              textAlign: 'center',
+              paddingRight: '52px',
+              margin: '0 auto',
               y: '-8px'
             },
             marker: {
@@ -377,8 +377,8 @@ module zing {
               fontColor: '#fff',
               height: '15px',
               paddingTop: '22px',
-              paddingLeft: '26px',
-              textAlign: 'center',
+              paddingRight: '52px',
+              margin: '0 auto',
               y: '-8px'
             },
             marker: {
@@ -490,8 +490,8 @@ module zing {
               fontColor: '#fff',
               height: '15px',
               paddingTop: '22px',
-              paddingLeft: '26px',
-              textAlign: 'center',
+              paddingRight: '52px',
+              margin: '0 auto',
               y: '-8px'
             },
             marker: {
@@ -603,8 +603,8 @@ module zing {
               fontColor: '#fff',
               height: '15px',
               paddingTop: '22px',
-              paddingLeft: '26px',
-              textAlign: 'center',
+              paddingRight: '52px',
+              margin: '0 auto',
               y: '-8px'
             },
             marker: {

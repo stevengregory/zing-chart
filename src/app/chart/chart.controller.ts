@@ -7,11 +7,7 @@ module zing {
 
   ChartController.$inject = ['config', 'chartService'];
 
-  function ChartController(config: {
-    plotNames: Array < string >
-  }, chartService: {
-    getCharts: any
-  }): void {
+  function ChartController(config: { plotNames: Array<string> }, chartService: { getCharts: any }): void {
     let vm = this;
     vm.addPlot = addPlot;
     vm.myJson = chartService.getCharts();
@@ -42,8 +38,8 @@ module zing {
       vm.myJson.graphset[chartId].series.push(plot);
     }
 
-    function generatePlots(): Array < number > {
-      let arr: Array < number > = [];
+    function generatePlots(): Array<number> {
+      let arr: Array<number> = [];
       for (let i = 0; i < 10; i++) {
         arr.push(Math.floor((Math.random() * 100)));
       }

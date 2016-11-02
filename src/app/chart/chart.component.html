@@ -24,11 +24,11 @@
         <div class="right-bar"></div>
         <div class="chart">
           <zingchart id="myChart" zc-json="vm.myJson" zc-height="700" zc-width="1100"></zingchart>
-          <button type="button btn-primary" class="btn btn-primary" ng-click="vm.addPlot()">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Plots
+          <button type="button btn-primary" class="btn btn-primary" ng-click="vm.zoomIn()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Zoom In
           </button>
-          <button type="button btn-primary" class="btn btn-default" ng-click="vm.resetPlots()">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Plots
+          <button type="button btn-primary" class="btn btn-default" ng-click="vm.zoomOut()">
+            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Zoom Out
           </button>
           <div class="drop-zone zone-2" dnd-list dnd-drop="vm.dropCallback(2)">Drop Zone 1</div>
           <div class="drop-zone zone-3" dnd-list dnd-drop="vm.dropCallback(3)">Drop Zone 2</div>

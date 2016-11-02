@@ -7,14 +7,19 @@ module zing {
 
   ChartController.$inject = ['config', 'chartService'];
 
-  function ChartController(config: { plotNames: Array<string> }, chartService: { getCharts: any }): void {
+  function ChartController(config: {
+    plotNames: Array < string >
+  }, chartService: {
+    getCharts: any
+  }): void {
     let vm = this;
     vm.addPlot = addPlot;
-    vm.resetPlots = resetPlots;
     vm.myJson = chartService.getCharts();
     vm.dropCallback = dropCallback;
     vm.dragCallback = dragCallback;
     vm.plots = config.plotNames;
+    vm.zoomIn = zoomIn;
+    vm.zoomOut = zoomOut;
 
     function randomPlot(): Object {
       let plot = {
@@ -37,8 +42,8 @@ module zing {
       vm.myJson.graphset[chartId].series.push(plot);
     }
 
-    function generatePlots(): Array<number> {
-      let arr: Array<number> = [];
+    function generatePlots(): Array < number > {
+      let arr: Array < number > = [];
       for (let i = 0; i < 10; i++) {
         arr.push(Math.floor((Math.random() * 100)));
       }
@@ -53,15 +58,24 @@ module zing {
     function addPlot(): void {
       for (let i = 2; i < 7; i++) {
         let plot = randomPlot();
-        console.log(vm.myJson.graphset[i]);
         vm.myJson.graphset[i].series.push(plot);
       }
     }
 
-    function resetPlots(): void {
-      for (let i = 2; i < 7; i++) {
-        vm.myJson.graphset[i].series = [];
-      }
+    function zoomIn(): void {
+      zingchart.exec('myChart', 'zoomin', {
+        graphid: 2,
+        zoomx: true,
+        zoomy: true
+      });
+    }
+
+    function zoomOut(): void {
+      zingchart.exec('myChart', 'zoomout', {
+        graphid: 2,
+        zoomx: true,
+        zoomy: true
+      });
     }
   }
 }

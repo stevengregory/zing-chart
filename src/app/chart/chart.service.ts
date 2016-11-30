@@ -72,8 +72,9 @@ module zing {
             borderTop: 'red',
             item: {
               fontColor: '#fff',
-              marginRight: '-20px',
-              height: '100px'
+              marginRight: '20px',
+              height: '100px',
+              paddingLeft: '0'
             },
             marker: {
               visible: 'false'

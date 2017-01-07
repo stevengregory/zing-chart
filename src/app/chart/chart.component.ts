@@ -1,7 +1,7 @@
 module zing {
   'use strict';
 
-  let chart = {
+  const chart = {
     templateUrl: 'app/chart/chart.component.html',
     controllerAs: 'vm',
     controller: 'ChartController'

@@ -6,7 +6,7 @@ module zing {
     .service('chartService', chartService);
 
   function chartService() {
-    let service = {
+    const service = {
       getCharts: getCharts
     };
     return service;

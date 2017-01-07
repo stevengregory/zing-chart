@@ -17,8 +17,10 @@ gulp.task('htmlhint', function() {
 
 gulp.task('tslint', function() {
   return gulp.src(['src/app/**/*.ts'])
-    .pipe(tslint())
-    .pipe(tslint.report('verbose'));
+    .pipe(tslint({
+      formatter: 'verbose'
+    }))
+    .pipe(tslint.report())
 });
 
 gulp.task('less', function() {
@@ -37,9 +39,8 @@ gulp.task('ts', function() {
     'src/app/chart/chart.controller.ts'
   ];
   var tsResult = gulp.src(sourceTsFiles)
-    .pipe(ts(tsProject));
-  return tsResult.js
-    .pipe(gulp.dest('src/app'));
+    .pipe(tsProject());
+  return tsResult.js.pipe(gulp.dest('src/app'));
 });
 
 gulp.task('bundle', ['ts'], function() {
@@ -64,5 +65,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', ['less', 'bundle']);
-
 gulp.task('default', ['build', 'watch']);

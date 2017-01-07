@@ -16,7 +16,6 @@
     "bootstrap": "^3.3.7",
     "zingchart": "^2.5.0",
     "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0",
-    "angular-dragula": "^1.2.8",
     "angular-drag-and-drop-lists": "^1.4.0"
   }
 }
